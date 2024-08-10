@@ -1,0 +1,98 @@
+/* Ensure the page takes up the full viewport and centers the content */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("hacker_wallpaper.jpg"); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    color: white; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the container to be translucent */
+.container {
+    background: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for headers */
+h1, .result h2 {
+    font-family: 'Aptos', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* General form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Styling for the password input field */
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 25px; /* Circular from both ends */
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    background: #222;
+    color: #eee;
+    font-size: 16px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px;
+    background-color: #149414;
+    border: none;
+    color: white;
+    border-radius: 25px; /* Circular from both ends */
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Button size adjusts to the length of text */
+    min-width: 100px; /* Minimum width for the button */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for result section */
+.result {
+    margin-top: 20px;
+}
+
+/* List styling */
+.result ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styling */
+.result li {
+    margin-bottom: 8px;
+}
+
+/* Styling for valid and invalid status */
+.valid {
+    color: lightgreen;
+}
+
+.invalid {
+    color: lightcoral;
+}
